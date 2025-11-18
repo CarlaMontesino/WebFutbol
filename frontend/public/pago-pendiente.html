@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado del pago</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="seccion contenedor" style="min-height:60vh;text-align:center;">
+    <h1 id="estado"></h1>
+    <p id="detalle"></p>
+    <a href="/" class="btn primario">Volver al inicio</a>
+  </main>
+  <script>
+    const estado = document.getElementById('estado');
+    const detalle = document.getElementById('detalle');
+    const page = window.location.pathname.replace('/', '').replace('.html','');
+    const mensajes = {
+      'pago-exitoso': {
+        titulo: '¡Pago confirmado!',
+        descripcion: 'Gracias por apoyar al club. Te enviaremos los detalles al email registrado.'
+      },
+      'pago-fallido': {
+        titulo: 'El pago no se completó',
+        descripcion: 'Podés intentar nuevamente o elegir otro medio de pago.'
+      },
+      'pago-pendiente': {
+        titulo: 'Pago en proceso',
+        descripcion: 'Mercado Pago notificará cuando el pago sea aprobado.'
+      },
+      'pago-simulado': {
+        titulo: 'Pago simulado',
+        descripcion: `Esto es una vista previa. Total estimado: ${new URLSearchParams(window.location.search).get('total') || ''}`
+      }
+    };
+    const mensaje = mensajes[page] || mensajes['pago-simulado'];
+    estado.textContent = mensaje.titulo;
+    detalle.textContent = mensaje.descripcion;
+  </script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+:root {
+  --color-principal: #0fa36d;
+  --color-secundario: #ff7f11;
+  --color-fondo: #0a0f1f;
+  --color-texto: #f8f9fb;
+  --color-texto-suave: #cfd6e6;
+  --color-card: #142033;
+  --max-width: 1100px;
+  --radio: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', 'Archivo', sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radio);
+}
+
+.contenedor {
+  width: min(90%, var(--max-width));
+  margin-inline: auto;
+}
+
+.sitio-header {
+  background: radial-gradient(circle at top, rgba(15,163,109,0.45), transparent), url('https://images.unsplash.com/photo-1478033394151-c931d5a4bdd6?auto=format&fit=crop&w=1400&q=60') center/cover;
+  color: var(--color-texto);
+  padding-bottom: 3rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo span {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.btn-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.btn-hamburguesa span {
+  width: 24px;
+  height: 3px;
+  background: var(--color-texto);
+  display: block;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 0 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  margin-bottom: 1rem;
+}
+
+.hero .descripcion {
+  max-width: 600px;
+}
+
+.hero-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.hero-card {
+  background: rgba(0,0,0,0.4);
+  padding: 2rem;
+  border-radius: var(--radio);
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 1.2rem;
+}
+
+.seccion {
+  padding: 4rem 0;
+  background: var(--color-fondo);
+}
+
+.seccion.tono-oscuro {
+  background: #0d1629;
+}
+
+.seccion-encabezado {
+  margin-bottom: 2rem;
+}
+
+.etiqueta {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-secundario);
+  font-size: 0.9rem;
+}
+
+.tarjetas-grid, .sobre-grid, .escuela-grid, .tabla-canchas, .galeria-grid, .contacto-grid, .footer-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tarjeta, .formulario, .carrito, .tabla-canchas article, .testimonios article {
+  background: var(--color-card);
+  padding: 1.5rem;
+  border-radius: var(--radio);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea,
+.carrito input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: var(--color-texto);
+  margin-top: 0.3rem;
+}
+
+.formulario label,
+.carrito label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primario {
+  background: var(--color-principal);
+  color: #06131f;
+}
+
+.btn.secundario {
+  background: var(--color-secundario);
+  color: #0a0f1f;
+}
+
+.tienda-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.tienda-grid article {
+  background: var(--color-card);
+  border-radius: var(--radio);
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.mensaje-form,
+.mensaje-carrito {
+  min-height: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-secundario);
+}
+
+.galeria-sobre,
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.acordeon details {
+  background: var(--color-card);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radio);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.acordeon summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contacto-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.footer-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 2rem 0;
+}
+
+.site-footer {
+  background: #070c16;
+  color: var(--color-texto-suave);
+}
+
+.copy {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin: 0;
+}
+
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    flex-direction: column;
+    background: rgba(7,12,22,0.95);
+    padding: 1.5rem;
+    border-radius: var(--radio);
+    display: none;
+  }
+
+  .menu.activo {
+    display: flex;
+  }
+
+  .btn-hamburguesa {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+  }
+
+  .tarjetas-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sobre-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .escuela-grid,
+  .tabla-canchas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

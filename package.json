@@ -1,0 +1,30 @@
+{
+  "name": "club-deportivo-plantilla",
+  "version": "1.0.0",
+  "description": "Plantilla full-stack para clubes deportivos locales.",
+  "main": "backend/app.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "nodemon backend/app.js"
+  },
+  "keywords": [
+    "club",
+    "deportivo",
+    "plantilla",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mercadopago": "^1.5.14",
+    "sqlite3": "^5.1.7",
+    "joi": "^17.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

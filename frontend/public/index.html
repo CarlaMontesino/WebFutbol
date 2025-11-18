@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Deportivo Patagonia Sur</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sitio-header" id="inicio">
+    <div class="contenedor nav-wrapper">
+      <div class="logo">
+        <!-- Texto + imagen del club -->
+        <span>Club Deportivo Patagonia Sur</span>
+      </div>
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="#sobre">Sobre el club</a>
+        <a href="#deportes">Deportes</a>
+        <a href="#escuela">Escuela de fútbol</a>
+        <a href="#canchas">Canchas</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="btn-hamburguesa" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <section class="hero contenedor">
+      <div class="hero-texto">
+        <p class="etiqueta">Neuquén, Argentina</p>
+        <h1>Club Deportivo Patagonia Sur</h1>
+        <p class="descripcion">Una comunidad deportiva pensada para familias, socios y deportistas de todas las edades. Reservá tu cancha, sumate a la escuela de fútbol o participá de nuestros torneos.</p>
+        <div class="hero-botones">
+          <a href="#canchas" class="btn primario">Reservar cancha</a>
+          <a href="#escuela" class="btn secundario">Inscribir a mi hijo/a</a>
+        </div>
+        <ul class="beneficios">
+          <li>Reservá tu cancha en minutos</li>
+          <li>Escuela de fútbol infantil y juvenil</li>
+          <li>Torneos, amistosos y actividades para socios</li>
+        </ul>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-card">Tu club en el sur con corazón verde.</div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="sobre" class="seccion contenedor">
+      <div class="seccion-encabezado">
+        <p class="etiqueta">Sobre el club</p>
+        <h2>Nuestra historia, misión y valores</h2>
+      </div>
+      <div class="sobre-grid">
+        <article>
+          <h3>Historia</h3>
+          <p>Nacimos en 1998 para acercar el deporte a los barrios del sur de Neuquén. Hoy somos más de 300 familias activas y seguimos creciendo.</p>
+        </article>
+        <article>
+          <h3>Misión</h3>
+          <p>Formar personas a través del deporte, fomentando la amistad, la disciplina y el juego en equipo.</p>
+        </article>
+        <article>
+          <h3>Valores</h3>
+          <p>Comunidad, inclusión, respeto, desarrollo integral y mucho amor por la camiseta.</p>
+        </article>
+      </div>
+      <div class="galeria-sobre" aria-label="Fotos del club">
+        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=60" alt="Cancha de fútbol iluminada">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=60" alt="Equipo de básquet">
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=60" alt="Entrenamiento juvenil">
+      </div>
+    </section>
+
+    <section id="deportes" class="seccion tono-oscuro">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <p class="etiqueta">Deportes y actividades</p>
+          <h2>Elegí tu disciplina favorita</h2>
+        </div>
+        <div class="tarjetas-grid">
+          <article class="tarjeta">
+            <h3>Fútbol 5/7/11</h3>
+            <p>Entrenamientos mixtos, horarios mañana y tarde. Torneos internos todo el año.</p>
+            <p class="detalle">Edades: 5+ &middot; Días: Lun / Mié / Vie</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Handball</h3>
+            <p>Escuelas formativas y equipo mayor femenino. Participamos en ligas regionales.</p>
+            <p class="detalle">Edades: 9+ &middot; Días: Mar / Jue</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Básquet</h3>
+            <p>Entrenamientos orientados a fundamentos técnicos y físicos con profes especializados.</p>
+            <p class="detalle">Edades: 7+ &middot; Días: Mar / Jue / Sáb</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Vóley</h3>
+            <p>Categorías juvenil y adultos mixtos. Ideal para compartir con amigos.</p>
+            <p class="detalle">Edades: 12+ &middot; Días: Lun / Mié</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Funcional y gimnasio</h3>
+            <p>Entrenamientos personalizados, acompañamiento nutricional básico y seguimiento mensual.</p>
+            <p class="detalle">Edades: 15+ &middot; Días: Lun a Vie</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Actividades sociales</h3>
+            <p>Encuentros familiares, torneos relámpago, amistosos y eventos solidarios.</p>
+            <p class="detalle">Abierto a socios y no socios</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="escuela" class="seccion contenedor">
+      <div class="seccion-encabezado">
+        <p class="etiqueta">Escuela de fútbol</p>
+        <h2>Formamos a las próximas generaciones</h2>
+        <p>Grupos reducidos con profes certificados, seguimiento personalizado y encuentros amistosos con clubes vecinos.</p>
+      </div>
+      <div class="escuela-grid">
+        <article>
+          <h3>Grupos por edad</h3>
+          <ul>
+            <li>Semillitas (5 a 8 años)</li>
+            <li>Preinfantiles (9 a 12 años)</li>
+            <li>Juveniles (13 a 16 años)</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Horarios</h3>
+          <p>Lunes, miércoles y viernes de 17:00 a 21:00 hs.</p>
+          <p>Sábados amistosos y encuentros especiales.</p>
+        </article>
+        <article>
+          <h3>Requisitos</h3>
+          <ul>
+            <li>Apto médico vigente.</li>
+            <li>Cuota mensual al día.</li>
+            <li>Compromiso familiar con valores del club.</li>
+          </ul>
+        </article>
+      </div>
+      <button class="btn primario" data-accion="whatsapp-escuela">Consultar por WhatsApp</button>
+      <form id="form-inscripcion" class="formulario">
+        <h3>Formulario de inscripción</h3>
+        <label>
+          Nombre del niño/a
+          <input type="text" name="nombreNino" required>
+        </label>
+        <label>
+          Edad
+          <input type="number" name="edad" min="5" max="17" required>
+        </label>
+        <label>
+          Categoría
+          <select name="categoria" required>
+            <option value="Semillitas">Semillitas (5-8)</option>
+            <option value="Preinfantiles">Preinfantiles (9-12)</option>
+            <option value="Juveniles">Juveniles (13-16)</option>
+          </select>
+        </label>
+        <label>
+          Nombre del adulto responsable
+          <input type="text" name="nombreAdulto" required>
+        </label>
+        <label>
+          Teléfono
+          <input type="tel" name="telefono" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <button type="submit" class="btn primario">Inscribir ahora</button>
+        <p class="mensaje-form" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="canchas" class="seccion tono-oscuro">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <p class="etiqueta">Alquiler de canchas</p>
+          <h2>Canchas listas para tus partidos</h2>
+          <p>Canchas techadas de césped sintético con iluminación LED y vestuarios. Horario extendido de 9 a 23 hs.</p>
+        </div>
+        <div class="tabla-canchas">
+          <article>
+            <h3>Tipos de cancha</h3>
+            <ul>
+              <li>Fútbol 5 - Ideal para equipos reducidos.</li>
+              <li>Fútbol 7 - Espacio extra para correr.</li>
+              <li>Fútbol 11 - Torneos y amistosos.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Tarifas orientativas</h3>
+            <ul>
+              <li>09 a 16 hs: $16.000</li>
+              <li>16 a 20 hs: $18.500</li>
+              <li>20 a 23 hs: $20.000</li>
+            </ul>
+          </article>
+          <!-- Futuro: integrar con Google Calendar o panel propio para mostrar disponibilidad en vivo -->
+          <article>
+            <h3>Reservas rápidas</h3>
+            <p>Atendemos por teléfono, redes y WhatsApp. En el futuro se puede integrar con un panel con calendario.</p>
+            <button class="btn secundario" data-accion="whatsapp-canchas">Consultar por reserva</button>
+          </article>
+        </div>
+        <form id="form-reserva" class="formulario">
+          <h3>Solicitá tu reserva</h3>
+          <label>Nombre<input type="text" name="nombre" required></label>
+          <label>Teléfono<input type="tel" name="telefono" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Fecha<input type="date" name="fecha" required></label>
+          <label>Hora<input type="time" name="hora" required></label>
+          <label>Tipo de cancha
+            <select name="tipoCancha" required>
+              <option value="Fútbol 5">Fútbol 5</option>
+              <option value="Fútbol 7">Fútbol 7</option>
+              <option value="Fútbol 11">Fútbol 11</option>
+            </select>
+          </label>
+          <button type="submit" class="btn primario">Reservar cancha</button>
+          <p class="mensaje-form" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="tienda" class="seccion contenedor">
+      <div class="seccion-encabezado">
+        <p class="etiqueta">Tienda oficial</p>
+        <h2>Indumentaria Patagonia Sur</h2>
+        <p>Comprá camisetas, shorts y buzos con pago online o coordiná retiro en el club.</p>
+      </div>
+      <div class="tienda-grid" id="productos"></div>
+      <aside class="carrito" aria-live="polite">
+        <h3>Carrito</h3>
+        <ul id="lista-carrito"></ul>
+        <p class="total">Total: <span id="total-carrito">$0</span></p>
+        <label>Email para la compra
+          <input type="email" id="email-compra" placeholder="tu@email.com">
+        </label>
+        <button class="btn primario" id="btn-comprar">Comprar ahora</button>
+        <p class="mensaje-carrito"></p>
+      </aside>
+    </section>
+
+    <section class="seccion tono-oscuro" id="testimonios">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <p class="etiqueta">Testimonios</p>
+          <h2>Historias reales de nuestra comunidad</h2>
+        </div>
+        <div class="tarjetas-grid testimonios">
+          <article>
+            <p>“Mi hijo espera los entrenamientos toda la semana. Las profes son muy humanas y cercanas.”</p>
+            <span>- Laura, mamá categoría Semillitas</span>
+          </article>
+          <article>
+            <p>“Alquilamos la cancha todos los jueves y siempre está impecable. La iluminación es espectacular.”</p>
+            <span>- Maxi, equipo amateur</span>
+          </article>
+          <article>
+            <p>“Es un club familiar donde todos se saludan. Orgulloso de vestir estos colores.”</p>
+            <span>- Sofía, jugadora de handball</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="seccion contenedor">
+      <div class="seccion-encabezado">
+        <p class="etiqueta">Galería</p>
+        <h2>Momentos que nos representan</h2>
+      </div>
+      <div class="galeria-grid">
+        <img src="https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=600&q=60" alt="Equipo de fútbol celebrando">
+        <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=600&q=60" alt="Entrenamiento bajo la lluvia">
+        <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=60" alt="Partido de vóley">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=60" alt="Familias mirando el partido">
+      </div>
+    </section>
+
+    <section id="faq" class="seccion tono-oscuro">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <p class="etiqueta">Preguntas frecuentes</p>
+          <h2>Respondemos tus dudas</h2>
+        </div>
+        <div class="acordeon" aria-live="polite">
+          <details>
+            <summary>¿Cómo reservo una cancha?</summary>
+            <p>Completá el formulario o escribinos por WhatsApp. Confirmamos disponibilidad y te enviamos los datos de pago.</p>
+          </details>
+          <details>
+            <summary>¿Qué medios de pago aceptan?</summary>
+            <p>Mercado Pago, transferencia y efectivo en la administración.</p>
+          </details>
+          <details>
+            <summary>¿Desde qué edad pueden inscribirse?</summary>
+            <p>La escuela de fútbol arranca desde los 5 años y hay actividades recreativas para adolescentes y adultos.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si llueve?</summary>
+            <p>Contamos con canchas cubiertas y techadas. En caso de suspensión, reprogramamos sin costo.</p>
+          </details>
+          <details>
+            <summary>¿Puedo probar una clase?</summary>
+            <p>Sí, la primera clase es sin cargo para conocer el club y el staff.</p>
+          </details>
+          <details>
+            <summary>¿Ofrecen entrenamientos femeninos?</summary>
+            <p>Tenemos equipos femeninos en fútbol, handball y vóley. ¡Consultanos!</p>
+          </details>
+          <details>
+            <summary>¿Tienen estacionamiento?</summary>
+            <p>Sí, contamos con estacionamiento interno para socios y familias.</p>
+          </details>
+          <details>
+            <summary>¿Se puede pagar la cuota online?</summary>
+            <p>Estamos sumando pagos online mediante Mercado Pago. Consultá para recibir el link.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion contenedor">
+      <div class="seccion-encabezado">
+        <p class="etiqueta">Contacto</p>
+        <h2>Estamos para ayudarte</h2>
+      </div>
+      <div class="contacto-grid">
+        <article>
+          <h3>Datos del club</h3>
+          <ul>
+            <li><strong>Dirección:</strong> <a href="https://maps.google.com/?q=Neuqu%C3%A9n" target="_blank" rel="noopener">Neuquén Capital</a></li>
+            <li><strong>Teléfono:</strong> <a href="tel:+5492995550000">+54 9 299 555 0000</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@patagoniasurclub.com">info@patagoniasurclub.com</a></li>
+            <li><strong>Horarios:</strong> Lunes a sábado de 9 a 22 hs</li>
+          </ul>
+          <button class="btn secundario" data-accion="whatsapp-general">Escribir a WhatsApp</button>
+        </article>
+        <form id="form-contacto" class="formulario">
+          <h3>Formulario general</h3>
+          <label>Nombre<input type="text" name="nombre" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Asunto<input type="text" name="asunto"></label>
+          <label>Mensaje<textarea name="mensaje" minlength="10" required></textarea></label>
+          <button type="submit" class="btn primario">Enviar mensaje</button>
+          <p class="mensaje-form" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="contenedor footer-grid">
+      <div>
+        <h4>Club Deportivo Patagonia Sur</h4>
+        <p>Plantilla adaptable: reemplazá este texto por la info de tu club.</p>
+      </div>
+      <div>
+        <h5>Links rápidos</h5>
+        <ul>
+          <li><a href="#deportes">Deportes</a></li>
+          <li><a href="#canchas">Canchas</a></li>
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Horarios</h5>
+        <p>Administración: Lun a Vie 10-20 hs</p>
+        <p>Escuela: Lun / Mié / Vie 17-21 hs</p>
+        <p>Canchas: Todos los días 9-23 hs</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="anio"></span> Club Deportivo Patagonia Sur. Plantilla para clubes barriales.</p>
+  </footer>
+
+  <a href="https://wa.me/5492995550000?text=Hola%2C%20me%20gustar%C3%ADa%20hacer%20una%20consulta%20sobre%20el%20club." class="whatsapp-flotante" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
