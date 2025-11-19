@@ -38,7 +38,7 @@ img {
 }
 
 .sitio-header {
-  background: radial-gradient(circle at top, rgba(15,163,109,0.45), transparent), url('https://images.unsplash.com/photo-1478033394151-c931d5a4bdd6?auto=format&fit=crop&w=1400&q=60') center/cover;
+  background: radial-gradient(circle at top, rgba(15,163,109,0.45), transparent), url('./assets/CanchaVistaCielo.webp') center/cover;
   color: var(--color-texto);
   padding-bottom: 3rem;
 }
@@ -339,70 +339,6 @@ textarea {
   .tabla-canchas {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  /* Evitar scroll cuando el menú está abierto (opcional pero recomendado) */
-body.no-scroll {
-  overflow: hidden;
-}
-
-/* Overlay que cubre toda la pantalla */
-.menu-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
-  z-index: 80; /* debajo del menú, encima del contenido */
-}
-
-/* Cuando el menú está abierto, activamos el overlay */
-.menu-overlay.is-active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Menú móvil (cuadrado oscuro que ya tenés) */
-.mobile-nav {
-  position: absolute;
-  top: 60px;              /* ajustá según tu header */
-  right: 1rem;
-  background: rgba(0, 0, 0, 0.9);
-  border-radius: 16px;
-  padding: 1rem 1.25rem;
-  min-width: 220px;
-
-  opacity: 0;
-  transform: translateY(-10px) scale(0.97);
-  pointer-events: none;
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-  z-index: 90;            /* por encima del overlay */
-}
-
-/* Estado abierto del menú: animación suave */
-.mobile-nav.is-open {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  pointer-events: auto;
-}
-
-/* Links del menú (ajustá a tu estilo) */
-.mobile-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.mobile-nav li + li {
-  margin-top: 0.5rem;
-}
-
-.mobile-nav a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-weight: 500;
-}
 }
 .carrusel-jugadores {
   position: relative;
