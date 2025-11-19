@@ -181,3 +181,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
   cargarProductos();
 });
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuOverlay = document.getElementById('menuOverlay');
+const body = document.body;
+
+function closeMenu() {
+  mobileMenu.classList.remove('is-open');
+  menuOverlay.classList.remove('is-active');
+  body.classList.remove('no-scroll');
+  if (menuToggle) {
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+}
+
+function openMenu() {
+  mobileMenu.classList.add('is-open');
+  menuOverlay.classList.add('is-active');
+  body.classList.add('no-scroll');
+  if (menuToggle) {
+    menuToggle.setAttribute('aria-expanded', 'true');
+  }
+}
+
+if (menuToggle && mobileMenu && menuOverlay) {
+  // Click en el botón hamburguesa
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('is-open');
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Click en el overlay = cerrar menú
+  menuOverlay.addEventListener('click', closeMenu);
+
+  // Click en cualquier link del menú = cerrar menú
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Tecla ESC = cerrar menú
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
+  const carruseles = document.querySelectorAll('[data-carrusel]');
+    carruseles.forEach((carrusel) => {
+      const ventana = carrusel.querySelector('[data-carrusel-ventana]');
+      const btnPrev = carrusel.querySelector('[data-carrusel-prev]');
+      const btnNext = carrusel.querySelector('[data-carrusel-next]');
+
+      const calcularDesplazamiento = () => {
+        const card = carrusel.querySelector('.jugador-card');
+        return card ? card.offsetWidth + 20 : ventana.offsetWidth * 0.8;
+      };
+
+      const mover = (direccion) => {
+        if (!ventana) return;
+        ventana.scrollBy({
+          left: calcularDesplazamiento() * direccion,
+          behavior: 'smooth'
+        });
+      };
+
+      btnPrev?.addEventListener('click', () => mover(-1));
+      btnNext?.addEventListener('click', () => mover(1));
+    });
+}

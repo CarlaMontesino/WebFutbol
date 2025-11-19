@@ -47,6 +47,21 @@
         <div class="hero-card">Tu club en el sur con corazón verde.</div>
       </div>
     </section>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">
+    ☰
+  </button>
+
+  <nav class="mobile-nav" id="mobileMenu">
+    <ul>
+      <li><a href="#sobre-club">Sobre el club</a></li>
+      <li><a href="#deportes">Deportes</a></li>
+      <li><a href="#escuela">Escuela de fútbol</a></li>
+      <li><a href="#canchas">Canchas</a></li>
+      <li><a href="#tienda">Tienda</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="menu-overlay" id="menuOverlay"></div>
   </header>
 
   <main>
@@ -232,7 +247,56 @@
         </form>
       </div>
     </section>
-
+    <!-- Carrusel de jugadores destacados inspo pag independiente -->
+    <section id="plantel" class="seccion carrusel-jugadores">
+      <div class="overlay"></div>
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <p class="etiqueta">Plantel destacado</p>
+          <h2>Nuestros referentes en cancha</h2>
+          <p>Mostrá a tus jugadoras y jugadores estrellas con un carrusel vistoso inspirado en presentaciones profesionales.</p>
+        </div>
+      </div>
+      <div class="carrusel" data-carrusel>
+        <button class="carrusel-btn" data-carrusel-prev aria-label="Ver jugadoras anteriores">‹</button>
+        <div class="carrusel-ventana" data-carrusel-ventana>
+          <div class="carrusel-track" data-carrusel-track>
+            <article class="jugador-card">
+              <p class="numero">01</p>
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=60" alt="Arquero del club">
+              <h3>Rodrigo Rey</h3>
+              <p class="posicion">Arquero</p>
+            </article>
+            <article class="jugador-card">
+              <p class="numero">07</p>
+              <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=60" alt="Defensor del club">
+              <h3>Lucas Lavagnino</h3>
+              <p class="posicion">Defensor central</p>
+            </article>
+            <article class="jugador-card">
+              <p class="numero">10</p>
+              <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=400&q=60" alt="Mediocampista del club">
+              <h3>Joaquín Blázquez</h3>
+              <p class="posicion">Mediocampista</p>
+            </article>
+            <article class="jugador-card">
+              <p class="numero">11</p>
+              <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=400&q=60" alt="Delantero del club">
+              <h3>Mateo Morro</h3>
+              <p class="posicion">Extremo</p>
+            </article>
+            <article class="jugador-card">
+              <p class="numero">29</p>
+              <img src="https://images.unsplash.com/photo-1508606572321-901ea443707f?auto=format&fit=crop&w=400&q=60" alt="Delantero alternativo del club">
+              <h3>Leonardo Godoy</h3>
+              <p class="posicion">Delantero</p>
+            </article>
+          </div>
+        </div>
+        <button class="carrusel-btn" data-carrusel-next aria-label="Ver siguientes jugadores">›</button>
+      </div>
+    </section>
+    <!--Tienda online con carrito de compras simple -->
     <section id="tienda" class="seccion contenedor">
       <div class="seccion-encabezado">
         <p class="etiqueta">Tienda oficial</p>
